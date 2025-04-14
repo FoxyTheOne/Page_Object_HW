@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id("io.qameta.allure") version "2.12.0"
 }
 
 group = 'org.mycompany'
@@ -22,6 +23,8 @@ dependencies {
     testImplementation 'org.aeonbits.owner:owner:1.0.12'
     // AssertJ ( assertThat etc )
     implementation 'org.assertj:assertj-core:3.27.3'
+    // Allure-junit5 + добавить плагин
+    implementation 'io.qameta.allure:allure-junit5:2.29.1'
 }
 
 test {
